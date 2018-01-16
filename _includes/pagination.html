@@ -1,15 +1,35 @@
-<nav class="pagination" role="navigation">
+
+<nav class="pagination">
   {% if paginator.previous_page %}
+
     {% if paginator.previous_page == 1 %}
-      <a rel="prev" class="posts newer btn small" href="{{ site.baseurl }}/#blog" title="Previous Page">← Newer Posts</a>
+      <a href="/">Prev</a>
     {% else %}
-      <a rel="prev" class="posts newer btn small" href="{{ site.baseurl }}/page{{ paginator.previous_page }}/">← Newer Posts</a>
+      <a href="/page{{ paginator.previous_page }}">Prev</a>
     {% endif %}
+
+  {% else %}
+    <span class="disabled">Prev</span>
   {% endif %}
 
-  <span class="pagination__page-number">Page {{ paginator.page}} of {{ paginator.total_pages}}</span>
+  {% if paginator.page == 1 %}
+    <span class="active">1</span>
+  {% else %}
+    <a href="/">1</a>
+  {% endif %}
+
+  {% for count in (2..paginator.total_pages) %}
+
+    {% if count == paginator.page %}
+      <span class="active">{{ count }}</span>
+    {% else %}
+      <a href="/page{{ count }}">{{ count }}</a>
+    {% endif %}
+  {% endfor %}
 
   {% if paginator.next_page %}
-    <a rel="next" class="posts older btn small" href="{{ site.baseurl }}/page{{ paginator.next_page }}/">Older Posts →</a>
+    <a href="/page{{ paginator.next_page }}">Next</a>
+  {% else %}
+    <span class="disabled">Next</span>
   {% endif %}
-</nav>
+</nav> <!-- End Section Pagination -->

@@ -1,45 +1,34 @@
-# jekyll-uno
+# Bef is a responsive jekyll theme
 
-Jekyll-Uno - a minimal, responsive theme for Jekyll based on the [Uno](https://github.com/daleanthony/Uno) theme for Ghost.
+Bef - Blog Enjoy Freedom is a responsive jekyll theme which created to be simple and freedom.
 
-> :warning:
-  This theme requires ruby and rubygems installed
+## Demo
 
-### Features
+Check the theme in action [Demo](https://artemsheludko.github.io/bef/)
 
-* Clean layout
-* Resposive layout
-* Pagination
-* Syntax highlighting
-* Social links
-* Tags listing page
-* Categories listing page
-* Google Analytics integration
-* Disqus integration
+The main page would look like this:
 
----
+![Main page preview](https://github.com/artemsheludko/bef/blob/master/assets/img/bef_main_page.jpg?raw=true)
 
-### Install and Test
+The post page would look like this:
 
-1. Download or clone repo `git clone git@github.com:joshgerdes/jekyll-uno.git`
-2. Enter the folder: `cd jekyll-uno/`
-3. If you don't have bundler installed: `gem install bundler`
-3. Install Ruby gems: `bundle install`
-4. Start Jekyll server: `bundle exec jekyll serve --watch`
+![Post page preview](https://github.com/artemsheludko/bef/blob/master/assets/img/bef_post.jpg?raw=true)
 
-Access via: [http://localhost:4000/jekyll-uno/](http://localhost:4000/jekyll-uno/)
+## Features
 
----
+- [Google Fonts](https://fonts.google.com/)
+- [Font Awesome](http://fontawesome.io/)
+- [Vide](http://vodkabears.github.io/vide/)
+- [Disqus](https://disqus.com/)
+- [MailChimp](https://mailchimp.com/)
+- [Formspree!](https://formspree.io/)
+- [Analytics](https://analytics.google.com/analytics/web/)
+- Share Buttons, Recent Post, Section Author, Contact and more...
 
-### Demo and Download
+## Installation:
 
-[Demo](http://joshgerdes.com/jekyll-uno/)
-[Download](https://github.com/joshgerdes/jekyll-uno/archive/master.zip)
+Fork the ``master`` branch and delete ``gh-pages`` branch in it. This is important because ``gh-pages`` branch is used here only to host the blog. You should be using the master branch as the source and create a fresh ``gh-pages`` branch.
 
-![jekyll-uno - free Jekyll theme](/screenshot.png)
+### License
 
----
-
-### Copyright and license
-
-It is under [the MIT license](/LICENSE).
+GNU General Public License v3.0
